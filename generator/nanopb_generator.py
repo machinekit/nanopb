@@ -26,8 +26,10 @@ except:
     raise
 
 try:
-    import proto.nanopb_pb2 as nanopb_pb2
-    import proto.plugin_pb2 as plugin_pb2
+    #import proto.nanopb_pb2 as nanopb_pb2
+    #import proto.plugin_pb2 as plugin_pb2
+    import nanopb_pb2
+    import google.protobuf.compiler.plugin_pb2 as plugin_pb2
 except:
     sys.stderr.write('''
          ********************************************************************
